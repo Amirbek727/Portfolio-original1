@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+    <style>
+        #result {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        function saytMyName(){
+            let name = prompt("What's your name:");
+           
+        prompt("Hello " + name);
+        } 
+
+        saytMyName();
+
+        function subtractNumbers() {
+            let num1 = parseFloat(prompt("Birinchi sonni kiriting:"));
+            let num2 = parseFloat(prompt("Ikkinchi sonni kiriting:"));
+            let result;
+
+            if (num1 > num2) {
+                result = num1 - num2;
+            } else {
+                result = num2 - num1;
+            }
+
+            document.getElementById("result").innerHTML = "Natija: " + result;
+        }
+
+        window.onload = function() {
+            subtractNumbers();
+        };
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+    
+</body>
+</html>
